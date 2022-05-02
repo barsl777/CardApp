@@ -1,2 +1,0 @@
-# testApp
-Created with CodeSandbox
