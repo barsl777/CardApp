@@ -38,7 +38,7 @@ export function fetchCards() {
     dispatch(getCards());
     try {
       const response = await fetch(
-        "https://jsonplaceholder.typicode.com/photos"
+        "/photos"
       );
       const data = await response.json();
       dispatch(getCardsSuccess(data));
