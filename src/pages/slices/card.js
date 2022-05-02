@@ -34,7 +34,7 @@ export function fetchCard(id) {
     dispatch(getCard());
     try {
       const response = await fetch(
-        `https://jsonplaceholder.typicode.com/photos/${id}`
+        `/photos/${id}`
       );
       const data = await response.json();
       dispatch(getCardSuccess(data));
